@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ids:ids xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS/1.0/ids.xsd" xmlns:ids="http://standards.buildingsmart.org/IDS">
+  <ids:info>
+    <ids:title>Required properties from Ids-attributes.xlsx</ids:title>
+    <ids:version>1.0</ids:version>
+    <ids:description>This is code generated IDS file</ids:description>
+    <ids:date>2026-06-02</ids:date>
+    <ids:purpose>Example for RIL</ids:purpose>
+    <ids:milestone>DEV</ids:milestone>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification name="BEC" ifcVersion="IFC2X3" description="Example to check BEC attributes">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded"> 
+        <ids:entity>
+          <ids:name>
+              <ids:simpleValue>IFCELEMENTASSEMBLY</ids:simpleValue>
+          </ids:name>
+       </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property>
+          <ids:propertySet>
+            <ids:simpleValue>BEC</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>Elementin brutto pinta-ala</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property>
+          <ids:propertySet>
+            <ids:simpleValue>BEC</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>Elementin netto pinta-ala</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property>
+          <ids:propertySet>
+            <ids:simpleValue>BEC</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>Elementin raudoitusarvio</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>
