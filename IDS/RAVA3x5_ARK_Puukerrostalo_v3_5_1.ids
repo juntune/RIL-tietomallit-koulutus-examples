@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ids:ids xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS/1.0/ids.xsd" xmlns:ids="http://standards.buildingsmart.org/IDS">
+  <ids:info>
+    <ids:title>Esimerkki kerrostietojen tarkastamisesta ids:llä</ids:title>
+    <ids:version>1.0</ids:version>
+    <ids:description>Esimerkki kerrostietojen tarkastamisesta ids:llä</ids:description>
+    <ids:date>2026-06-02</ids:date>
+    <ids:purpose>Tarkastaa, että kaikki suunnittelualat käyttävät samoja kerrosnimiä</ids:purpose>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification name="Sallittujen kerrosnimien tarkastus" ifcVersion="IFC4X3_ADD2" description="Esimerkki kerrostietojen tarkastamisesta">
+      <ids:applicability minOccurs="1" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCBUILDINGSTOREY</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:attribute cardinality="required">
+          <ids:name>
+            <ids:simpleValue>Name</ids:simpleValue>
+          </ids:name>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="01_Kerros" />
+              <xs:enumeration value="02_Kerros" />
+              <xs:enumeration value="03_Kerros" />
+              <xs:enumeration value="04_Kerros" />
+              <xs:enumeration value="05_Kerros" />
+            </xs:restriction>
+          </ids:value>
+        </ids:attribute>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>
